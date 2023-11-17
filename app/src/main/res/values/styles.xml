@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="label" parent="android:TextAppearance.Material.Caption"/>
+    <style name="text" parent="android:TextAppearance.Material.Subhead"/>
+    <style name="subheader" parent="android:TextAppearance.Material.Body2">
+
+    </style>
+</resources>

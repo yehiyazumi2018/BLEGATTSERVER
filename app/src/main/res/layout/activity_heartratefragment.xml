@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Heartratefragment">
+
+
+    <TextView
+        android:id="@+id/textView_serviceName"
+        android:text="@string/heartRateServiceName"
+       android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"/>
+    <GridLayout
+
+        android:id="@+id/gridLayout_characteristicsValues"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="3"
+        android:layout_below="@id/textView_serviceName">
+        <TextView
+
+            android:visibility="gone"
+            android:id="@+id/label_bodySensorLocation"
+            android:text="@string/label_bodySensorLocation"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/label_heartRateMeasurementValue"
+            android:text="@string/label_heartRateMeasurementValue"
+            android:visibility="gone"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/label_energyExpended"
+            android:text="@string/label_energyExpended"
+            android:visibility="gone"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/spinner_bodySensorLocation"
+            android:layout_columnWeight="1"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+
+            android:layout_height="wrap_content"
+            />
+
+
+
+        <EditText
+
+            android:id="@+id/editText_energyExpended"
+            android:ems="4"
+            android:visibility="gone"
+            android:maxLength="5"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_columnWeight="1"
+            android:background="@drawable/printer_name_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </GridLayout>
+
+
+   <!-- <TextView
+
+        android:id="@+id/tv_heartrate"
+        android:layout_width="220dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="34dp"
+        android:hint="Press notify button to send notify text "
+        android:paddingLeft="4dp"
+        android:textSize="18sp" />-->
+   <!-- <Button
+        android:id="@+id/button_heartRateMeasurementNotify"
+        android:layout_width="101dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/gridLayout_characteristicsValues"
+        android:layout_marginTop="-55dp"
+        android:text="@string/notify"
+        android:layout_marginHorizontal="220dp"
+        android:textSize="18sp"
+        android:textColor="#000" />-->
+
+
+    <RadioButton
+        android:id="@+id/RB_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:textColor="#000"
+        android:text="Device Registration"/>
+
+    <RadioButton
+        android:id="@+id/RB_2"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="165dp"
+        android:layout_marginTop="-33dp"
+        android:textColor="#000"
+        android:text="Lock Activity" />
+
+    <RadioButton
+        android:id="@+id/RB_3"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Health Status" />
+
+    <RadioButton
+        android:id="@+id/RB_4"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="165dp"
+        android:layout_marginTop="-33dp"
+        android:textColor="#000"
+        android:text="Low Battery" />
+
+    <RadioButton
+        android:id="@+id/RB_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Attempts Failure"/>
+
+    <RadioButton
+        android:id="@+id/RB_6"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="175dp"
+        android:layout_marginTop="-33dp"
+        android:textColor="#000"
+        android:text="Improper Shaft Movement" />
+
+    <RadioButton
+        android:id="@+id/RB_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Over Heat"/>
+
+    <RadioButton
+        android:id="@+id/RB_8"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="165dp"
+        android:layout_marginTop="-33dp"
+        android:textColor="#000"
+        android:text="Preventive Maintenance" />
+    <RadioButton
+        android:id="@+id/RB_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Tampering Attempt"/>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/editText_heartRateMeasurementValue"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:hint="Enter Notify Text"
+        android:background="@drawable/printer_name_border"
+        android:textSize="18sp"
+        android:layout_marginTop="34dp"
+        android:paddingLeft="4dp"/>
+</LinearLayout>
+
+
+
+
+
+
